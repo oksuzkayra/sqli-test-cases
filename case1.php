@@ -8,7 +8,7 @@
 	$id = $_GET['id'];
 	include("sql_connect.php");
 			
-	$result = $db->query("SELECT content FROM $table where item_id='$id'"); 
+	$result = $db->query("SELECT status FROM $table where id='$id'"); 
 	if($result->fetch()[0]) echo "There is content";
 	else echo "No content";	
 ?>

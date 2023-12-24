@@ -10,7 +10,7 @@
 	include("sql_connect.php");
 
 	try {
-		$db->query("SELECT content FROM $table where content='$id'"); 
+		$db->query("SELECT status FROM $table where status='$id'"); 
 	} catch (PDOException $e) {
 		print("Error!" . $e->getMessage());
 		die();

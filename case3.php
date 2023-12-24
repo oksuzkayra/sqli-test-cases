@@ -9,7 +9,7 @@
 $id=$_GET['id'];
 include("sql_connect.php");
 
-$db->query("SELECT content from $table where item_id='$id'");
+$db->query("SELECT status from $table where id='$id'");
 ?>
 
 

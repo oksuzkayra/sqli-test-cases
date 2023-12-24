@@ -10,8 +10,8 @@ $id=$_GET['id'];
 echo "Your query is: ".$id;
 include("sql_connect.php");
 
-foreach($db->query("SELECT content from $table where item_id='$id'") as $row){
-	echo "<br><br><h3>".$row['content']."</h3>";
+foreach($db->query("SELECT status from $table where id='$id'") as $row){
+	echo "<br><br><h3>".$row['status']."</h3>";
 }
 ?>
 

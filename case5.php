@@ -6,8 +6,10 @@
 		
 		<label for="uname">Username:</label>
 		<input type="text" name="uname"><br><br>
+
 		<label for="pwd">Password:</label>
 		<input type="password" name="pwd"><br><br>
+
 		<input type="submit" value="Register">
 
 	</form>
